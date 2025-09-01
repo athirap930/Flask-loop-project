@@ -16,7 +16,7 @@ def home():
 # Route for Greeting Page (Dynamic Input from User)
 @app.route('/greet', methods=['POST'])
 def greet():
-    # Get the name entered by the user from the form
+    # Get name entered by the user from the form
     user_name = request.form.get('username')
     return render_template('index.html', msg=f"Hello, {user_name}!", tech_list=[])
 
